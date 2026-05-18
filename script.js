@@ -38,7 +38,7 @@ function renderGallery(container, images) {
     tile.className = 'tile';
 
     const imgEl = document.createElement('img');
-    imgEl.src = `images/${img.file}`;
+    imgEl.src = `images/${img.category}/${img.file}`;
     imgEl.alt = img.title || '';
     imgEl.loading = 'lazy';
     tile.appendChild(imgEl);
@@ -69,7 +69,7 @@ function renderGallery(container, images) {
 
 function openLightbox(img) {
   const lb = document.getElementById('lightbox');
-  document.getElementById('lightbox-img').src = `images/${img.file}`;
+  document.getElementById('lightbox-img').src = `images/${img.category}/${img.file}`;
   const captionBits = [img.title, img.medium, img.year].filter(Boolean).join(' &middot; ');
   document.getElementById('lightbox-caption').innerHTML = captionBits;
   lb.hidden = false;

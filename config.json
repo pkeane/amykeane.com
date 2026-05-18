@@ -1,7 +1,7 @@
 {
   "artist": {
     "name": "Amy Keane",
-    "bio": "",
+    "bio": "I am a representational painter, urban and nature sketcher living in Austin, Texas with my family. I\u2019ve studied and practiced art throughout my life, and became a full time artist in 2023.  I focus on impressionistically painting still lives, flowers and landscapes, mainly in acrylic or gouache paint. I like broad strokes and a loose feel in my paintings. I also like using a limited palette of colors to help create unity.  I also keep a sketch journal filled with pen and ink and watercolors.  In the scenes I paint, I hope to convey a story or sense of place that will make the viewer feel relaxed and visually intrigued.  ",
     "location": "",
     "email": "",
     "instagram": ""
@@ -12,305 +12,348 @@
   },
   "images": [
     {
+      "file": "IMG_5487.jpeg",
+      "title": "",
+      "year": "",
+      "medium": "",
+      "featured": true,
+      "category": "landscapes"
+    },
+    {
       "file": "2EF0C97E-6C6F-466A-80A1-750D5DDE5327.jpg",
       "title": "",
       "year": "",
       "medium": "",
-      "featured": false
-    },
-    {
-      "file": "C9D30A51-5E61-4133-8B0F-D18F0F64D9EF.jpg",
-      "title": "",
-      "year": "",
-      "medium": "",
-      "featured": false
-    },
-    {
-      "file": "D95A8A5D-1229-49B6-BF47-FB94B409F66A.jpg",
-      "title": "",
-      "year": "",
-      "medium": "",
-      "featured": false
-    },
-    {
-      "file": "IMG_0072.jpeg",
-      "title": "",
-      "year": "",
-      "medium": "",
-      "featured": false
-    },
-    {
-      "file": "IMG_0823.jpeg",
-      "title": "",
-      "year": "",
-      "medium": "",
-      "featured": false
-    },
-    {
-      "file": "IMG_0942.jpeg",
-      "title": "",
-      "year": "",
-      "medium": "",
-      "featured": false
-    },
-    {
-      "file": "IMG_0949.jpeg",
-      "title": "",
-      "year": "",
-      "medium": "",
-      "featured": false
-    },
-    {
-      "file": "IMG_0982.jpeg",
-      "title": "",
-      "year": "",
-      "medium": "",
-      "featured": false
-    },
-    {
-      "file": "IMG_1002.jpeg",
-      "title": "",
-      "year": "",
-      "medium": "",
-      "featured": false
-    },
-    {
-      "file": "IMG_1064.jpeg",
-      "title": "",
-      "year": "",
-      "medium": "",
-      "featured": false
-    },
-    {
-      "file": "IMG_1080.jpeg",
-      "title": "",
-      "year": "",
-      "medium": "",
-      "featured": false
-    },
-    {
-      "file": "IMG_1112.jpeg",
-      "title": "",
-      "year": "",
-      "medium": "",
-      "featured": false
-    },
-    {
-      "file": "IMG_1142.jpeg",
-      "title": "",
-      "year": "",
-      "medium": "",
-      "featured": false
-    },
-    {
-      "file": "IMG_1157.jpeg",
-      "title": "",
-      "year": "",
-      "medium": "",
-      "featured": false
-    },
-    {
-      "file": "IMG_1173.jpeg",
-      "title": "",
-      "year": "",
-      "medium": "",
-      "featured": false
-    },
-    {
-      "file": "IMG_1270.jpeg",
-      "title": "",
-      "year": "",
-      "medium": "",
-      "featured": false
-    },
-    {
-      "file": "IMG_1279.jpeg",
-      "title": "",
-      "year": "",
-      "medium": "",
-      "featured": false
-    },
-    {
-      "file": "IMG_1454.jpeg",
-      "title": "",
-      "year": "",
-      "medium": "",
-      "featured": false
-    },
-    {
-      "file": "IMG_1475.jpeg",
-      "title": "",
-      "year": "",
-      "medium": "",
-      "featured": false
-    },
-    {
-      "file": "IMG_1495.jpeg",
-      "title": "",
-      "year": "",
-      "medium": "",
-      "featured": false
-    },
-    {
-      "file": "IMG_1521.jpeg",
-      "title": "",
-      "year": "",
-      "medium": "",
-      "featured": false
-    },
-    {
-      "file": "IMG_1523.jpeg",
-      "title": "",
-      "year": "",
-      "medium": "",
-      "featured": false
-    },
-    {
-      "file": "IMG_1631.jpeg",
-      "title": "",
-      "year": "",
-      "medium": "",
-      "featured": false
-    },
-    {
-      "file": "IMG_1633.jpeg",
-      "title": "",
-      "year": "",
-      "medium": "",
-      "featured": false
-    },
-    {
-      "file": "IMG_1655.jpeg",
-      "title": "",
-      "year": "",
-      "medium": "",
-      "featured": false
-    },
-    {
-      "file": "IMG_1761.jpeg",
-      "title": "",
-      "year": "",
-      "medium": "",
-      "featured": false
-    },
-    {
-      "file": "IMG_1821.jpeg",
-      "title": "",
-      "year": "",
-      "medium": "",
-      "featured": false
+      "featured": true,
+      "category": "flowers"
     },
     {
       "file": "IMG_1856.jpeg",
       "title": "",
       "year": "",
       "medium": "",
-      "featured": false
-    },
-    {
-      "file": "IMG_2813.jpeg",
-      "title": "",
-      "year": "",
-      "medium": "",
-      "featured": false
-    },
-    {
-      "file": "IMG_4347.jpeg",
-      "title": "",
-      "year": "",
-      "medium": "",
-      "featured": false
-    },
-    {
-      "file": "IMG_4362.jpeg",
-      "title": "",
-      "year": "",
-      "medium": "",
-      "featured": false
-    },
-    {
-      "file": "IMG_4388.jpeg",
-      "title": "",
-      "year": "",
-      "medium": "",
-      "featured": false
-    },
-    {
-      "file": "IMG_4501.jpeg",
-      "title": "",
-      "year": "",
-      "medium": "",
-      "featured": false
-    },
-    {
-      "file": "IMG_4866.jpeg",
-      "title": "",
-      "year": "",
-      "medium": "",
-      "featured": false
-    },
-    {
-      "file": "IMG_5110.jpeg",
-      "title": "",
-      "year": "",
-      "medium": "",
-      "featured": false
-    },
-    {
-      "file": "IMG_5266.jpeg",
-      "title": "",
-      "year": "",
-      "medium": "",
-      "featured": false
+      "featured": false,
+      "category": "flowers"
     },
     {
       "file": "IMG_5448.jpeg",
       "title": "",
       "year": "",
       "medium": "",
-      "featured": false
+      "featured": false,
+      "category": "landscapes"
     },
     {
-      "file": "IMG_5487.jpeg",
+      "file": "C9D30A51-5E61-4133-8B0F-D18F0F64D9EF.jpg",
       "title": "",
       "year": "",
       "medium": "",
-      "featured": false
+      "featured": false,
+      "category": "flowers"
     },
     {
-      "file": "IMG_5496.jpeg",
+      "file": "IMG_5266.jpeg",
       "title": "",
       "year": "",
       "medium": "",
-      "featured": false
+      "featured": false,
+      "category": "landscapes"
+    },
+    {
+      "file": "IMG_1142.jpeg",
+      "title": "",
+      "year": "",
+      "medium": "",
+      "featured": true,
+      "category": "still_lifes"
+    },
+    {
+      "file": "IMG_1270.jpeg",
+      "title": "",
+      "year": "",
+      "medium": "",
+      "featured": false,
+      "category": "flowers"
+    },
+    {
+      "file": "D95A8A5D-1229-49B6-BF47-FB94B409F66A.jpg",
+      "title": "",
+      "year": "",
+      "medium": "",
+      "featured": false,
+      "category": "flowers"
+    },
+    {
+      "file": "IMG_0823.jpeg",
+      "title": "",
+      "year": "",
+      "medium": "",
+      "featured": false,
+      "category": "still_lifes"
+    },
+    {
+      "file": "IMG_0942.jpeg",
+      "title": "",
+      "year": "",
+      "medium": "",
+      "featured": false,
+      "category": "flowers"
+    },
+    {
+      "file": "IMG_0949.jpeg",
+      "title": "",
+      "year": "",
+      "medium": "",
+      "featured": false,
+      "category": "flowers"
+    },
+    {
+      "file": "IMG_0982.jpeg",
+      "title": "",
+      "year": "",
+      "medium": "",
+      "featured": false,
+      "category": "flowers"
+    },
+    {
+      "file": "IMG_4388.jpeg",
+      "title": "",
+      "year": "",
+      "medium": "",
+      "featured": false,
+      "category": "still_lifes"
+    },
+    {
+      "file": "IMG_1002.jpeg",
+      "title": "",
+      "year": "",
+      "medium": "",
+      "featured": false,
+      "category": "flowers"
     },
     {
       "file": "IMG_5499.jpeg",
       "title": "",
       "year": "",
       "medium": "",
-      "featured": false
+      "featured": false,
+      "category": "landscapes"
+    },
+    {
+      "file": "IMG_1064.jpeg",
+      "title": "",
+      "year": "",
+      "medium": "",
+      "featured": false,
+      "category": "flowers"
     },
     {
       "file": "IMG_5502.jpeg",
       "title": "",
       "year": "",
       "medium": "",
-      "featured": false
+      "featured": false,
+      "category": "landscapes"
+    },
+    {
+      "file": "IMG_1080.jpeg",
+      "title": "",
+      "year": "",
+      "medium": "",
+      "featured": false,
+      "category": "flowers"
+    },
+    {
+      "file": "IMG_1112.jpeg",
+      "title": "",
+      "year": "",
+      "medium": "",
+      "featured": false,
+      "category": "flowers"
+    },
+    {
+      "file": "IMG_1157.jpeg",
+      "title": "",
+      "year": "",
+      "medium": "",
+      "featured": false,
+      "category": "still_lifes"
+    },
+    {
+      "file": "IMG_1173.jpeg",
+      "title": "",
+      "year": "",
+      "medium": "",
+      "featured": false,
+      "category": "flowers"
+    },
+    {
+      "file": "IMG_1279.jpeg",
+      "title": "",
+      "year": "",
+      "medium": "",
+      "featured": false,
+      "category": "flowers"
+    },
+    {
+      "file": "IMG_1454.jpeg",
+      "title": "",
+      "year": "",
+      "medium": "",
+      "featured": false,
+      "category": "flowers"
+    },
+    {
+      "file": "IMG_1475.jpeg",
+      "title": "",
+      "year": "",
+      "medium": "",
+      "featured": false,
+      "category": "flowers"
+    },
+    {
+      "file": "IMG_1495.jpeg",
+      "title": "",
+      "year": "",
+      "medium": "",
+      "featured": false,
+      "category": "flowers"
+    },
+    {
+      "file": "IMG_1521.jpeg",
+      "title": "",
+      "year": "",
+      "medium": "",
+      "featured": false,
+      "category": "flowers"
+    },
+    {
+      "file": "IMG_0072.jpeg",
+      "title": "",
+      "year": "",
+      "medium": "",
+      "featured": false,
+      "category": "still_lifes"
+    },
+    {
+      "file": "IMG_1523.jpeg",
+      "title": "",
+      "year": "",
+      "medium": "",
+      "featured": false,
+      "category": "flowers"
+    },
+    {
+      "file": "IMG_1631.jpeg",
+      "title": "",
+      "year": "",
+      "medium": "",
+      "featured": false,
+      "category": "flowers"
+    },
+    {
+      "file": "IMG_1633.jpeg",
+      "title": "",
+      "year": "",
+      "medium": "",
+      "featured": false,
+      "category": "flowers"
+    },
+    {
+      "file": "IMG_1655.jpeg",
+      "title": "",
+      "year": "",
+      "medium": "",
+      "featured": false,
+      "category": "flowers"
+    },
+    {
+      "file": "IMG_1761.jpeg",
+      "title": "",
+      "year": "",
+      "medium": "",
+      "featured": false,
+      "category": "flowers"
+    },
+    {
+      "file": "IMG_1821.jpeg",
+      "title": "",
+      "year": "",
+      "medium": "",
+      "featured": false,
+      "category": "flowers"
+    },
+    {
+      "file": "IMG_2813.jpeg",
+      "title": "",
+      "year": "",
+      "medium": "",
+      "featured": false,
+      "category": "landscapes"
+    },
+    {
+      "file": "IMG_4347.jpeg",
+      "title": "",
+      "year": "",
+      "medium": "",
+      "featured": false,
+      "category": "still_lifes"
+    },
+    {
+      "file": "IMG_4362.jpeg",
+      "title": "",
+      "year": "",
+      "medium": "",
+      "featured": false,
+      "category": "landscapes"
+    },
+    {
+      "file": "IMG_4501.jpeg",
+      "title": "",
+      "year": "",
+      "medium": "",
+      "featured": false,
+      "category": "landscapes"
+    },
+    {
+      "file": "IMG_4866.jpeg",
+      "title": "",
+      "year": "",
+      "medium": "",
+      "featured": false,
+      "category": "flowers"
+    },
+    {
+      "file": "IMG_5110.jpeg",
+      "title": "",
+      "year": "",
+      "medium": "",
+      "featured": false,
+      "category": "flowers"
+    },
+    {
+      "file": "IMG_5496.jpeg",
+      "title": "",
+      "year": "",
+      "medium": "",
+      "featured": false,
+      "category": "still_lifes"
     },
     {
       "file": "IMG_8621.jpeg",
       "title": "",
       "year": "",
       "medium": "",
-      "featured": false
+      "featured": false,
+      "category": "still_lifes"
     },
     {
       "file": "IMG_8625.jpeg",
       "title": "",
       "year": "",
       "medium": "",
-      "featured": false
+      "featured": false,
+      "category": "still_lifes"
     }
   ]
 }

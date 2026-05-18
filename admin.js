@@ -60,9 +60,9 @@ function renderTiles() {
       <button type="button" class="featured-toggle ${img.featured ? 'active' : ''}" title="Toggle featured">
         ${img.featured ? '★' : '☆'}
       </button>
-      <img class="tile-img" src="images/${img.file}" alt="" loading="lazy">
+      <img class="tile-img" src="images/${img.category}/${img.file}" alt="" loading="lazy">
       <div class="tile-body">
-        <div class="tile-filename">${img.file}</div>
+        <div class="tile-filename">${img.category ? img.category + ' / ' : ''}${img.file}</div>
         <input class="tile-field title" data-field="title" placeholder="Title" value="${escapeAttr(img.title || '')}">
         <input class="tile-field meta" data-field="medium" placeholder="Medium" value="${escapeAttr(img.medium || '')}">
         <input class="tile-field meta" data-field="year" placeholder="Year" value="${escapeAttr(img.year || '')}">

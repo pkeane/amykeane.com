@@ -8,7 +8,7 @@ Static portfolio site for Amy Keane's artwork. Hosted on GitHub Pages.
 - `styles.css` — styling
 - `script.js` — loads `config.json` and renders the gallery
 - `config.json` — site content (artist info, image order, featured flags, captions)
-- `images/` — artwork files
+- `images/` — artwork files, organized into `flowers/`, `landscapes/`, `still_lifes/`
 
 ## Editing the site
 
@@ -42,9 +42,21 @@ Edit `artist.bio`, `artist.location`, `artist.email`, `artist.instagram` in `con
 
 ## Adding new images
 
-1. Drop the file into `images/`
-2. Add an entry to the `images` array in `config.json`
+1. Drop the file into the appropriate subfolder: `images/flowers/`, `images/landscapes/`, or `images/still_lifes/`
+2. Add an entry to the `images` array in `config.json` with `file`, `category`, and any captions
 3. Commit and push
+
+Example entry:
+```json
+{
+  "file": "IMG_1234.jpeg",
+  "category": "flowers",
+  "title": "",
+  "year": "",
+  "medium": "",
+  "featured": false
+}
+```
 
 ## Local preview
 
