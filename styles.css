@@ -1,0 +1,154 @@
+:root {
+  --bg: #fafafa;
+  --fg: #1a1a1a;
+  --muted: #666;
+  --accent: #1a1a1a;
+  --border: #e0e0e0;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+header p {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+  font-style: italic;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.featured-gallery {
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+.tile {
+  cursor: pointer;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid var(--border);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tile:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.tile img {
+  display: block;
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.featured-gallery .tile img {
+  height: 420px;
+}
+
+.tile-caption {
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+}
+
+.tile-caption .title {
+  font-style: italic;
+}
+
+.tile-caption .meta {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.92);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 2rem;
+}
+
+.lightbox img {
+  max-width: 95%;
+  max-height: 85vh;
+  object-fit: contain;
+}
+
+.lightbox-caption {
+  color: #fff;
+  margin-top: 1rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2.5rem;
+  cursor: pointer;
+  line-height: 1;
+}
+
+@media (max-width: 600px) {
+  header h1 { font-size: 1.8rem; }
+  .gallery { grid-template-columns: 1fr; }
+  .tile img, .featured-gallery .tile img { height: 280px; }
+}
