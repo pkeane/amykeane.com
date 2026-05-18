@@ -39,7 +39,10 @@ function pickHero(images, category) {
 
 function renderHome(config) {
   if (config.artist.bio) {
-    document.getElementById('bio').textContent = config.artist.bio;
+    const bioEl = document.getElementById('bio');
+    bioEl.innerHTML = typeof marked !== 'undefined'
+      ? marked.parse(config.artist.bio)
+      : config.artist.bio.split(/\n\n+/).map(p => `<p>${p}</p>`).join('');
     document.getElementById('bio-section').hidden = false;
   }
 

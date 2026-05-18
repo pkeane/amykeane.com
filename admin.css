@@ -109,6 +109,13 @@ h2 {
 
 .meta-grid label.full { grid-column: 1 / -1; }
 
+.field-hint {
+  color: #888;
+  font-weight: normal;
+  font-size: 0.75rem;
+  margin-left: 0.5rem;
+}
+
 .meta-grid input,
 .meta-grid textarea {
   margin-top: 0.25rem;
