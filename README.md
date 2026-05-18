@@ -4,11 +4,14 @@ Static portfolio site for Amy Keane's artwork. Hosted on GitHub Pages.
 
 ## Structure
 
-- `index.html` — page shell
-- `styles.css` — styling
-- `script.js` — loads `config.json` and renders the gallery
-- `config.json` — site content (artist info, image order, featured flags, captions)
+- `index.html` — landing page with 3 category hero tiles
+- `flowers.html`, `still_lifes.html`, `landscapes.html` — category gallery pages
+- `styles.css` — shared styling
+- `script.js` — renders landing or category page based on `data-page` on `<body>`
+- `config.json` — site content (artist info, image order, category, featured flags, captions)
 - `images/` — artwork files, organized into `flowers/`, `landscapes/`, `still_lifes/`
+
+The featured image for each category (first image with `"featured": true` in that category) is used as the hero on the landing page. Falls back to the first image of the category if none are marked featured.
 
 ## Editing the site
 

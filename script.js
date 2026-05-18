@@ -1,15 +1,18 @@
+const CATEGORIES = [
+  { key: 'flowers', label: 'Flowers', page: 'flowers.html' },
+  { key: 'still_lifes', label: 'Still Lifes', page: 'still_lifes.html' },
+  { key: 'landscapes', label: 'Landscapes', page: 'landscapes.html' }
+];
+
 async function loadSite() {
   const res = await fetch('config.json');
   const config = await res.json();
 
   document.title = config.site.title || 'Portfolio';
-  document.getElementById('site-title').textContent = config.site.title || '';
-  document.getElementById('site-tagline').textContent = config.site.tagline || '';
-
-  if (config.artist.bio) {
-    document.getElementById('bio').textContent = config.artist.bio;
-    document.getElementById('bio-section').hidden = false;
-  }
+  const titleEl = document.getElementById('site-title');
+  if (titleEl) titleEl.textContent = config.site.title || '';
+  const taglineEl = document.getElementById('site-tagline');
+  if (taglineEl) taglineEl.textContent = config.site.tagline || '';
 
   const contactBits = [];
   if (config.artist.location) contactBits.push(config.artist.location);
@@ -18,21 +21,57 @@ async function loadSite() {
     const handle = config.artist.instagram.replace(/^@/, '');
     contactBits.push(`<a href="https://instagram.com/${handle}">@${handle}</a>`);
   }
-  document.getElementById('footer-contact').innerHTML = contactBits.join(' &middot; ');
+  const footerEl = document.getElementById('footer-contact');
+  if (footerEl) footerEl.innerHTML = contactBits.join(' &middot; ');
 
-  const featured = config.images.filter(img => img.featured);
-  const rest = config.images.filter(img => !img.featured);
-
-  if (featured.length > 0) {
-    document.getElementById('featured-section').hidden = false;
-    renderGallery(document.getElementById('featured-gallery'), featured);
+  const page = document.body.dataset.page;
+  if (page === 'home') {
+    renderHome(config);
+  } else if (page === 'category') {
+    renderCategory(config);
   }
-
-  renderGallery(document.getElementById('gallery'), rest);
 }
 
-function renderGallery(container, images) {
-  container.innerHTML = '';
+function pickHero(images, category) {
+  const inCat = images.filter(i => i.category === category);
+  return inCat.find(i => i.featured) || inCat[0] || null;
+}
+
+function renderHome(config) {
+  if (config.artist.bio) {
+    document.getElementById('bio').textContent = config.artist.bio;
+    document.getElementById('bio-section').hidden = false;
+  }
+
+  const grid = document.getElementById('hero-grid');
+  grid.innerHTML = '';
+
+  for (const cat of CATEGORIES) {
+    const hero = pickHero(config.images, cat.key);
+    if (!hero) continue;
+
+    const card = document.createElement('a');
+    card.className = 'hero-card';
+    card.href = cat.page;
+    card.innerHTML = `
+      <div class="hero-img-wrap">
+        <img src="images/${hero.category}/${hero.file}" alt="${cat.label}" loading="lazy">
+      </div>
+      <h2 class="hero-label">${cat.label}</h2>
+    `;
+    grid.appendChild(card);
+  }
+}
+
+function renderCategory(config) {
+  const catKey = document.body.dataset.category;
+  const catLabel = document.body.dataset.categoryLabel || catKey;
+  document.title = `${catLabel} — ${config.site.title || ''}`;
+
+  const images = config.images.filter(i => i.category === catKey);
+  const gallery = document.getElementById('gallery');
+  gallery.innerHTML = '';
+
   for (const img of images) {
     const tile = document.createElement('div');
     tile.className = 'tile';
@@ -63,8 +102,10 @@ function renderGallery(container, images) {
     }
 
     tile.addEventListener('click', () => openLightbox(img));
-    container.appendChild(tile);
+    gallery.appendChild(tile);
   }
+
+  wireLightbox();
 }
 
 function openLightbox(img) {
@@ -79,12 +120,12 @@ function closeLightbox() {
   document.getElementById('lightbox').hidden = true;
 }
 
-document.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
-document.getElementById('lightbox').addEventListener('click', e => {
-  if (e.target.id === 'lightbox') closeLightbox();
-});
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') closeLightbox();
-});
+function wireLightbox() {
+  const lb = document.getElementById('lightbox');
+  if (!lb) return;
+  document.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+  lb.addEventListener('click', e => { if (e.target.id === 'lightbox') closeLightbox(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+}
 
 loadSite();

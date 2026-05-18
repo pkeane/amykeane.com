@@ -6,22 +6,14 @@
   <title>Amy Keane</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-page="home">
   <header>
     <h1 id="site-title">Amy Keane</h1>
     <p id="site-tagline"></p>
   </header>
 
   <main>
-    <section id="featured-section" hidden>
-      <h2>Featured</h2>
-      <div class="gallery featured-gallery" id="featured-gallery"></div>
-    </section>
-
-    <section id="gallery-section">
-      <h2>Works</h2>
-      <div class="gallery" id="gallery"></div>
-    </section>
+    <section class="hero-grid" id="hero-grid"></section>
 
     <section id="bio-section" hidden>
       <h2>About</h2>
@@ -32,12 +24,6 @@
   <footer>
     <p id="footer-contact"></p>
   </footer>
-
-  <div id="lightbox" class="lightbox" hidden>
-    <button class="lightbox-close" aria-label="Close">&times;</button>
-    <img id="lightbox-img" alt="">
-    <div class="lightbox-caption" id="lightbox-caption"></div>
-  </div>
 
   <script src="script.js"></script>
 </body>
