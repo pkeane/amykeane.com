@@ -300,6 +300,14 @@
       "category": "still_lifes"
     },
     {
+      "file": "IMG_3964.jpeg",
+      "title": "",
+      "year": "",
+      "medium": "",
+      "featured": false,
+      "category": "landscapes"
+    },
+    {
       "file": "IMG_4362.jpeg",
       "title": "",
       "year": "",
@@ -354,14 +362,6 @@
       "medium": "",
       "featured": false,
       "category": "still_lifes"
-    },
-    {
-      "file": "IMG_3964.jpeg",
-      "title": "",
-      "year": "",
-      "medium": "",
-      "featured": false,
-      "category": "landscapes"
     }
   ]
 }
