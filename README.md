@@ -53,3 +53,21 @@ python3 -m http.server 8000
 ```
 
 Then open http://localhost:8000
+
+## Admin (drag-and-drop editor)
+
+For a visual way to reorder, feature, and caption images without editing JSON by hand, open:
+
+```
+http://localhost:8000/admin.html
+```
+
+(requires Chrome or Edge for "Save to disk"; Firefox/Safari can use the "Download config.json" button instead)
+
+In the admin page:
+- **Drag tiles** to reorder
+- Click the **☆** in the top-right of a tile to mark it featured
+- Click **title / medium / year** fields to edit captions inline
+- Edit site/artist info at the top
+- Click **Save to disk** — the first time, it'll prompt you to pick the location (choose `config.json` in the repo and overwrite). Subsequent saves write to the same file automatically.
+- Then commit and push.

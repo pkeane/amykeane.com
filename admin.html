@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin — Amy Keane</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <header class="admin-header">
+    <div>
+      <h1>Portfolio Admin</h1>
+      <p class="hint">Drag tiles to reorder. Click <span class="star-demo">☆</span> to feature. Click captions to edit. Save when done.</p>
+    </div>
+    <div class="actions">
+      <button id="reload-btn" type="button">Reload</button>
+      <button id="save-btn" type="button" class="primary">Save to disk</button>
+      <button id="download-btn" type="button">Download config.json</button>
+    </div>
+  </header>
+
+  <div id="status" class="status"></div>
+
+  <section class="meta-panel">
+    <h2>Site &amp; Artist</h2>
+    <div class="meta-grid">
+      <label>Site title <input type="text" data-meta="site.title"></label>
+      <label>Tagline <input type="text" data-meta="site.tagline"></label>
+      <label>Artist name <input type="text" data-meta="artist.name"></label>
+      <label>Location <input type="text" data-meta="artist.location"></label>
+      <label>Email <input type="text" data-meta="artist.email"></label>
+      <label>Instagram <input type="text" data-meta="artist.instagram"></label>
+      <label class="full">Bio <textarea data-meta="artist.bio" rows="4"></textarea></label>
+    </div>
+  </section>
+
+  <section>
+    <h2>Images <span class="count" id="count"></span></h2>
+    <div id="tiles" class="tiles"></div>
+  </section>
+
+  <script src="admin.js"></script>
+</body>
+</html>
